@@ -12,5 +12,5 @@ def publish_to_queue(queue_name, message):
     channel.basic_publish(exchange='', routing_key=queue_name, body=message)
 
     print(f" [x] Sent {message} to {queue_name}")
-
+    # jhkj
     connection.close()
